@@ -1,4 +1,4 @@
-# LINEAR SEARCH ALGORITHMS
+# LINEAR SEARCH ALGORITHM
 
 # Method 1
 def linearSearch(n, x):

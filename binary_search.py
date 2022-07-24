@@ -45,4 +45,3 @@ def binarySearch(arr, left, right, x):
     
     else:
         return -1
-
