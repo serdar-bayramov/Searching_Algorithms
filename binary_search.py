@@ -6,10 +6,9 @@ def binarySearch(arr, x):
     runtime: O(logN)
     """
     left, right = 0, len(arr)-1
-    mid = (left + right) // 2
-    
-    while left < right:
-        mid = (left + right) // 2
+        
+    while left <= right:
+        mid = left + (right-left) // 2
         if arr[mid] == x:
             return mid
         elif x < arr[mid]:
@@ -20,7 +19,7 @@ def binarySearch(arr, x):
     return -1
 
 
-result = binarySearch([1,2,3,4,6,7,8,9], 7)
+result = binarySearch([1,2,3,4,6,7,8,9], 3)
 if result == -1:
     print('x is not found')
 else:
