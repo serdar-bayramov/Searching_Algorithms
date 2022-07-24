@@ -2,6 +2,7 @@
 
 # Method 1
 def linearSearch(n, x):
+    
     """
     Time complexity: O(n)
     Auxiliary Space: O(1)
@@ -20,6 +21,6 @@ def linearSearch(n, x):
 result = linearSearch([1,2,3,4],6)
 
 if(result == -1):
-    print("Element is not present in array")
+    print("Element is not present in array.")
 else:
     print("Element is present at index", result)
