@@ -1,4 +1,8 @@
 # Iterative way of implementing binary search
+
+from selectors import EpollSelector
+
+
 def binarySearch(arr, x):
     """"
     Iterative way is to set left and right pointers and move 
@@ -8,7 +12,7 @@ def binarySearch(arr, x):
     left, right = 0, len(arr)-1
         
     while left <= right:
-        mid = (right+left) // 2
+        mid = right + (right - left)//2
         if arr[mid] == x:
             return mid
         elif x < arr[mid]:
@@ -24,3 +28,21 @@ if result == -1:
     print('x is not found')
 else:
     print('The number found at index: ' + str(result))
+
+
+# Recursive binary search
+
+def binarySearch(arr, left, right, x):
+
+    if right >= left:
+        mid = right + (right - left)//2
+        if arr[mid] == x:
+            return mid
+        elif arr[mid] > x:
+            return binarySearch(arr, left, mid-1, x)
+        else:
+            return binarySearch(arr, mid+1, right, x)
+    
+    else:
+        return -1
+
