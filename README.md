@@ -1,6 +1,6 @@
 # Sorting_Algorithms
 Exploring sorting algorithms
-1. Seleection sort algorithm
+1. Selection sort algorithm
 2. Bubble sort algorithm
 3. Insertion sort
 4. Merge sort
