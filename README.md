@@ -1,4 +1,4 @@
-# Sorting_Algorithms
+# Searching_Algorithms
 Exploring sorting algorithms
 1. Selection sort algorithm
 2. Bubble sort algorithm
